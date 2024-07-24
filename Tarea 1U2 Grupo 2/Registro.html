@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="icon" type="image/png" href="Images/Logo.png">
+    <link rel="stylesheet" href="CSS/Encabezado.css">
+    <link rel="stylesheet" href="CSS/Registro.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+</head>
+<body>
+    <header class="menu">
+        <logo>
+            <p>Aida</p> 
+            <p>Server</p>
+        </logo>
+
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Tiendas.html">Tiendas</a></li>
+            <li><a href="Quienes Somos.html">Quienes Somos</a></li>
+        </ul>
+    </header>  
+
+    <main>
+        <form action="response.php" method="POST" class="registerForm">
+            <h3 class="title_acc">CREAR NUEVA CUENTA DE CLIENTE</h3>
+            <div class="divs_acc">
+                <div class="div_inpts">
+                    <h3>INFORMACIÓN PERSONAL</h3>
+                    <br>
+                    <p>Nombre</p>
+                    <input type="text" id="Nombre" name="Nombre" class="ins">
+                    <br>
+                    <br>
+                    <p>Apellidos</p>
+                    <input type="text" id="Apellidos" name="Apellidos" class="ins">
+                    <br>
+                    <br>
+                    <p>Teléfono de Contacto</p>
+                    <input type="text" id="Telefono" name="Telefono" class="ins">
+                    <br>
+                    <br>
+                    <p>Fecha de Nacimiento</p>
+                    <input type="date" id="Fecha_Nac" name="Fecha_Nac" class="ins">
+                    <br>
+                    <br>
+                </div>
+
+                <form action=""></form>
+
+                <form action="ValidacionRegistro.php" class="div_inpts" method="get">
+                    <h3>INFORMACIÓN DE INICIO DE SESIÓN</h3>
+                    <br>
+                    <p>Correo electrónico</p>
+                    <input type="email" id="Mail" name="Mail" class="ins">
+                    <br>
+                    <br>
+                    <p>Contraseña</p>
+                    <input type="password" id="Pass" name="Pass" class="ins">
+                    <br>
+                    <br>
+                    <p>Confirmar Contraseña</p>
+                    <input type="password" id="PassVer" name="PassVer" class="ins">
+                    <br>
+                    <br>
+                    <div class="btn_div_acc">
+                        <input class="submit_form" type="submit" value="Registrar">
+                    </div>
+                </form>
+            </div>
+            
+        </form>
+    </main>
+    <footer>
+        <div>
+            <h3>AYUDA</h3>
+            <ul>
+                <li><a href="">Contactanos</a></li>
+                <li><a href="https://maps.app.goo.gl/uR5rZsziNosxAEyR8">Ubicanos</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>INFORMACION DEL SITIO</h3>
+            <ul>
+                <li><a href="">Terminos y condiciones</a></li>
+                <li><a href="">Quienes Somos</a></li>
+                <li><a href="/Mision_y_vision.html">Vision y Mision</a></li>
+            </ul>
+        </div>
+        <div class="footer_logo">
+            <img src="Images/Logo.png" alt="">
+            <h4>Aida-Server</h4>
+        </div>
+    </footer>
+</body>
+</html>

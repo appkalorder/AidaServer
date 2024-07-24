@@ -1,0 +1,63 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.bloque{
+    display: grid;
+    grid-template-rows: 150px 1fr 1fr 1fr 150px;
+    gap: 5px;   
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+hr{
+    border-color: #ffb338;
+    border-width: 1px 0;
+    width: 100%;
+    margin: 100px 0;
+}
+
+.bloque section{
+    display: flex;
+}
+
+.bloque img{
+    width: 250px;
+    border-radius: 30px;
+}
+
+.mision, .vision{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+
+}
+
+.mision aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo{
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #ffb338;
+    width: 50px;
+}
+
+.texto{
+    text-align: justify;
+    line-height: 23px;
+}

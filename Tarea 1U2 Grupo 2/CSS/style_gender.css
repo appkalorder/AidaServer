@@ -1,0 +1,141 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+article{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+} 
+
+.swiper {
+    width: 100%;
+    /* padding: 50px 0 50px 0; */
+}
+
+.swiper-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
+    gap: 40px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 450px;
+    background-color: white; 
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.4);
+    padding: 40px;
+    text-align: center;
+    box-sizing: border-box; /* Para incluir el padding y border en el ancho y alto */
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.icons i {
+    font-size: 20px;
+    color: #ffb900;
+}
+
+.icons img {
+    width: 120px;
+}
+
+.product-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-txt {
+    flex-basis: 50%;
+    text-align: left;
+}
+
+.product-txt span {
+    font-size: 25px;
+    color: #ffb900;
+    font-weight: bold;
+}
+
+.product-txt h3 {
+    font-size: 16px;
+    color: rgb(75, 75, 75); 
+    text-transform: uppercase;
+    overflow: hidden; /* Esconde el texto que sobrepasa los límites del contenedor */
+    text-overflow: ellipsis; /* Muestra puntos suspensivos (...) para el texto desbordado */
+    display: -webkit-box; /* Para compatibilidad con WebKit (Chrome, Safari) */
+    -webkit-line-clamp: 3; /* Limita el texto a 3 líneas */
+    -webkit-box-orient: vertical; /* Necesario para que -webkit-line-clamp funcione */
+    line-height: 1.5; /* Ajusta el interlineado */
+    max-height: calc(1.5em * 3); /* Altura máxima basada en el número de líneas y el interlineado */
+}
+
+.product-txt p {
+    font-size: 14px;
+    color: #dcdcdc; 
+}
+
+.product-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-img img {
+    /* flex-basis: 70%;
+    text-align: right;
+    width: 160px; */
+    position: relative;
+    max-width: 100px;
+    min-width: 50px;
+    max-height: 150px;
+    min-height: 50px;
+    flex-basis: 250px;
+    object-fit: cover;
+    transition: all 0.4s ease-in-out;
+}
+
+.brn-1 {
+    /* display: inline-block; */
+    padding: 13px 55px;
+    border: 1px solid #ffb900;
+    border-radius: 25px;
+    color: #ffb900;
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+.mas-pedido {
+    text-align: center; 
+    margin: 20px 0; 
+    grid-column: 1/4;
+}
+
+.mas-pedido h2 {
+    font-size: 2em; 
+    color: #803c4c; 
+    font-weight: bold; 
+    margin: 0; 
+    padding: 10px 0; 
+    border-bottom: 2px solid #ffb900; 
+    display: inline-block; 
+}
